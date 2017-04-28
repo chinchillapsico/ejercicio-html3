@@ -1,9 +1,8 @@
-function celsiusToF(celsius) 
-{
-  var celTemp = celsius;
-  var celToF = celTemp * 9 / 5 + 32;
-  var message = celTemp;
-    console.log(message);
-}
+function convertToF() {
+        var cTempVal = parseFloat(document.getElementById('cTemp').value);
+        var fTempVal = (cTempVal * (9 / 5)) + 32;
+        document.write(fTempVal);
+        document.getElementById('fTemp').value = fTempVal;
+        return false;
+    }
 
-celsiusToF(60);
